@@ -14,6 +14,7 @@ INNER JOIN data_jobs.skills_job_dim AS sjd
     ON jpf.job_id = sjd.job_id
 INNER JOIN data_jobs.skills_dim AS sd
     ON sjd.skill_id = sd.skill_id
+
 WHERE 
    job_title_short = 'Data Engineer'
    AND job_work_from_home = 'True'
